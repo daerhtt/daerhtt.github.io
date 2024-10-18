@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #9face6); /* Градиент */
+    background-color: #f0f0f0; /* Цвет фона */
 }
 
 .container {
@@ -18,8 +18,19 @@ body {
     font-size: 2.5em; /* Размер шрифта */
 }
 
+.profile-pic {
+    margin-bottom: 20px; /* Отступ между фото и кнопками */
+}
+
+.profile-pic img {
+    width: 150px; /* Ширина изображения */
+    height: 150px; /* Высота изображения */
+    border-radius: 50%; /* Круглая форма */
+    object-fit: cover; /* Обрезка изображения */
+}
+
 .buttons {
-    margin-bottom: 20px;
+    margin-top: 20px; /* Дополнительный отступ сверху для кнопок */
 }
 
 button {
@@ -36,15 +47,4 @@ button {
 
 button:hover {
     background-color: #0056b3; /* Цвет кнопок при наведении */
-}
-
-.profile-pic {
-    margin-top: 20px;
-}
-
-.profile-pic img {
-    width: 300px; /* Ширина изображения */
-    height: 300px; /* Высота изображения */
-    border-radius: 50%; /* Круглая форма */
-    object-fit: cover; /* Обрезка изображения */
 }

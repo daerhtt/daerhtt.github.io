@@ -5,11 +5,17 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Audiowide, sans-serif;
     background-image: url('back.jpg'); /* Путь к вашему фоновому изображению */
     background-size: cover; /* Заполнение фона */
     background-position: center; /* Центрирование изображения */
     background-repeat: no-repeat; /* Без повторения изображения */
+    animation: fadeIn 0.5s ease-in; /* Анимация появления */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .container {
@@ -18,7 +24,14 @@ body {
 
 .nickname {
     margin-bottom: 20px;
-    font-size: 2.5em; /* Размер шрифта */
+    font-size: 3em; /* Размер шрифта */
+    color: white;
+    animation: slideIn 0.5s ease-out; /* Анимация для ника */
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .profile-pic {
@@ -26,10 +39,16 @@ body {
 }
 
 .profile-pic img {
-    width: 300px; /* Ширина изображения */
-    height: 300px; /* Высота изображения */
+    width: 400px; /* Ширина изображения */
+    height: 400px; /* Высота изображения */
     border-radius: 50%; /* Круглая форма */
     object-fit: cover; /* Обрезка изображения */
+    animation: zoomIn 0.5s ease-in-out; /* Анимация увеличения изображения */
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 
 .buttons {
@@ -45,9 +64,14 @@ button {
     border-radius: 5px;
     background-color: #007BFF; /* Цвет кнопок */
     color: white;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s; /* Добавлено свойство для анимации при нажатии */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
     background-color: #0056b3; /* Цвет кнопок при наведении */
+}
+
+button:active {
+    transform: scale(0.95); /* Уменьшение размера кнопки при нажатии */
 }

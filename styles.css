@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Цвет фона */
+    background: linear-gradient(135deg, #74ebd5, #9face6); /* Градиент */
 }
 
 .container {
@@ -29,13 +29,13 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #FF97BB; /* Цвет кнопок */
+    background-color: #007BFF; /* Цвет кнопок */
     color: white;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #DD80CC; /* Цвет кнопок при наведении */
+    background-color: #0056b3; /* Цвет кнопок при наведении */
 }
 
 .profile-pic {

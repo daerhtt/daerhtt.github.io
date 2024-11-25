@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('back3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Скрывает выходящие за пределы элементы */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: auto; /* Позволяет прокрутку, если содержимое выходит за пределы */
+}
+
+.main-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку */
+    gap: 20px;
+    justify-content: center; /* Центрирует контент */
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Установите фиксированную ширину для каждого проекта */
+    max-width: 100%; /* Не превышает ширину контейнера */
+}
+
+.project-image {
+    width: 100%; /* Занимает 100% ширины контейнера проекта */
+    height: 200px; /* Установите высоту */
+    border-radius: 5px;
+    object-fit: cover; /* Сохранение пропорций изображения */
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 1.2em;
+    line-height: 1.5;
+}

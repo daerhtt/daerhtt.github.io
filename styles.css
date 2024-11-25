@@ -62,14 +62,14 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF; /* Цвет кнопок */
+    background-color: #6A5ACD; /* Цвет кнопок */
     color: white;
     transition: background-color 0.3s, transform 0.2s; /* Добавлено свойство для анимации при нажатии */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-    background-color: #0056b3; /* Цвет кнопок при наведении */
+    background-color: #483D8B; /* Цвет кнопок при наведении */
 }
 
 button:active {

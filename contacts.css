@@ -54,7 +54,7 @@ body {
 }
 
 .contact-form button {
-    background-color: #4CAF50; /* Зеленая кнопка */
+    background-color: #6A5ACD; /* Зеленая кнопка */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -64,5 +64,5 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #45a049; /* Темнее при наведении */
+    background-color: #483D8B; /* Темнее при наведении */
 }

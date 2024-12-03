@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: Audiowide, sans-serif;
+  background-image: url('/back.jpg'); /* Путь к вашему фоновому изображению */
+  background-size: cover; /* Заполнение фона */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat; /* Без повторения изображения */
+  animation: fadeIn 0.5s ease-in; /* Анимация появления */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.container {
+  text-align: center;
+}
+
+.nickname {
+  margin-bottom: 20px;
+  font-size: 3em; /* Размер шрифта */
+  color: white;
+  animation: slideIn 0.5s ease-out; /* Анимация для ника */
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.profile-pic {
+  margin-bottom: 20px; /* Отступ между фото и кнопками */
+}
+
+.profile-pic img {
+  width: 400px; /* Ширина изображения */
+  height: 400px; /* Высота изображения */
+  border-radius: 50%; /* Круглая форма */
+  object-fit: cover; /* Обрезка изображения */
+  animation: zoomIn 0.5s ease-in-out; /* Анимация увеличения изображения */
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.buttons {
+  margin-top: 20px; /* Дополнительный отступ сверху для кнопок */
+}
+
+.button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #6A5ACD; /* Цвет кнопок */
+  color: white;
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: background-color 0.3s, transform 0.2s; /* Добавлено свойство для анимации при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #483D8B; /* Цвет кнопок при наведении */
+}
+
+.button:active {
+  transform: scale(0.95); /* Уменьшение размера кнопки при нажатии */
+}
